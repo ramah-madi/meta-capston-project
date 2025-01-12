@@ -1,7 +1,7 @@
 [
     {
       "id": 1,
-      "imageSrc": "../assets/greek-salad.jpg",
+      "imageSrc": "greek-salad.jpg",
       "imageAlt": "A delicious greek salad dish.",
       "title": "Greek Salad",
       "price": 12.99,
@@ -9,7 +9,7 @@
     },
     {
       "id": 2,
-      "imageSrc": "../assets/bruchetta.svg",
+      "imageSrc": "bruchetta.svg",
       "imageAlt": "A delicious bruschetta dish.",
       "title": "Bruchetta",
       "price": 5.99,
@@ -17,7 +17,7 @@
     },
     {
       "id": 3,
-      "imageSrc": "../assets/lemon-dessert.jpg",
+      "imageSrc": "lemon-dessert.jpg",
       "imageAlt": "A delicious lemon dessert dish.",
       "title": "Lemon Dessert",
       "price": 5.0,

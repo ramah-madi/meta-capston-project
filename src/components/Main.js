@@ -3,8 +3,17 @@ import SpecialsCard from './SpecialsCard';
 import TestimonialsCard from './TestimonialsCard';
 import specialsData from '../data/specials.json';
 import testimonialsData from '../data/testimonials.json';
+import greekSalad from '../assets/greek-salad.jpg';
+import bruchetta from '../assets/bruchetta.svg';
+import lemonDessert from '../assets/lemon-dessert.jpg';
 import marioAndAdrianA from '../assets/mario-and-adrian-a.jpg';
 import marioAndAdrianB from '../assets/mario-and-adrian-b.jpg';
+
+const imageMap = {
+  "greek-salad.jpg": greekSalad,
+  "bruchetta.svg": bruchetta,
+  "lemon-dessert.jpg": lemonDessert,
+};
 
 export default function Main() {
   return (
@@ -19,7 +28,7 @@ export default function Main() {
           specialsData.map((specialItem) => {
             return ( <SpecialsCard
               key={specialItem.id}
-              imageSrc={specialItem.imageSrc}
+              imageSrc= {imageMap[specialItem.imageSrc]}
               imageAlt={specialItem.imageAlt}
               title={specialItem.title}
               price={specialItem.price}
