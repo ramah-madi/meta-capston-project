@@ -1,0 +1,20 @@
+[
+    {
+      "id": 1,
+      "text": "Little Lemon Restaurant is a hidden gem! From the moment I walked in, the cozy ambiance and warm smiles made me feel at home. I’ll definitely be coming back for more!",
+      "author": "Sophia Moore",
+      "role": "Customer"
+    },
+    {
+      "id": 2,
+      "text": "The staff were incredibly friendly and attentive, and the Bruschetta was the best I’ve ever had. It’s rare to find a place that serves food with such love and care.",
+      "author": "Adam Smith",
+      "role": "Customer"
+    },
+    {
+      "id": 3,
+      "text": "Little Lemon is my go-to spot for celebrating special occasions. The atmosphere is lively yet relaxing, and the menu never disappoints. I’ve brought my friends and family here, and they’re all equally impressed. Truly a five-star experience!",
+      "author": "Mike Warren",
+      "role": "Customer"
+    }
+]
