@@ -3,12 +3,12 @@ import stars from '../assets/stars.png';
 
 export default function TestimonialsCard({ text, author, role }) {
   return (
-    <div className='testimonials-item'>
+    <article className='testimonials-item'>
       <img className="stars-rating" src={stars} alt={`a 5 star rating from ${author}.`} />
-      <p>{text}</p>
-      <p>
-        {author} <span>{role}</span>
+      <p className='testimonial-review'>{text}</p>
+      <p className='testimonial-author'>
+        {author} <span className='testimonial-role'>{role}</span>
       </p>
-    </div>
+    </article>
   )
 }

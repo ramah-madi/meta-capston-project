@@ -18,10 +18,10 @@ const imageMap = {
 export default function Main() {
   return (
     <main className='main'>
-      <section className='specials'>
+      <section className='specials-section'>
         <header className='specials-header'>
-          <h2>Today's Specials</h2>
-          <button>Online Menu</button>
+          <h2 className='specials-title'>This weeks specials!</h2>
+          <button className='online-menu-btn'>Online Menu</button>
         </header>
         <div className='specials-grid'>
           {
@@ -38,9 +38,9 @@ export default function Main() {
         </div>
       </section>
 
-      <section className='testimonials'>
+      <section className='testimonials-section'>
         <header className='testimonials-header'>
-          <h2>Don’t take our word for it</h2>
+          <h2 className='testimonials-title'>Don’t take our word for it</h2>
         </header>
         <div className='testimonials-grid'>
           {
@@ -55,15 +55,15 @@ export default function Main() {
         </div>
       </section>
 
-      <section className='about'>
+      <section className='about-section'>
         <div className='about-text'>
-          <h2>Little Lemon</h2>
-          <h3>Chicago</h3>
-          <p>Welcome to Little Lemon, where flavor meets hospitality! Nestled in the city's heart, we pride ourselves on crafting delicious, fresh, and wholesome dishes inspired by Mediterranean cuisine. From zesty appetizers to indulgent desserts, every plate is made with love, using locally sourced ingredients and time-honored recipes.</p>
+          <h2 className='about-title'>Little Lemon</h2>
+          <h3 className='about-subtitle'>Chicago</h3>
+          <p className='about-description'>Welcome to Little Lemon, where flavor meets hospitality! Nestled in the city's heart, we pride ourselves on crafting delicious, fresh, and wholesome dishes inspired by Mediterranean cuisine. From zesty appetizers to indulgent desserts, every plate is made with love, using locally sourced ingredients and time-honored recipes.</p>
         </div>
         <div className='about-images'>
-          <img className='about-image' src={marioAndAdrianA} style={{ height: '20rem' }} alt='Mario and Adrian preparing a dish in the kitchen'/>
-          <img className='about-image' src={marioAndAdrianB} style={{ height: '20rem' }} alt='Mario and Adrian preparing dishes joyfully.'/>
+          <img className='about-image about-image-a' src={marioAndAdrianA}  alt='Mario and Adrian preparing a dish in the kitchen'/>
+          <img className='about-image about-image-b' src={marioAndAdrianB}  alt='Mario and Adrian preparing dishes joyfully.'/>
         </div>
       </section>
     </main>
