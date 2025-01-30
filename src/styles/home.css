@@ -1,0 +1,413 @@
+/* Header home styling */
+.header-main, .header-grid {
+    width: min(95%, 58rem);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 auto;
+    gap: 2rem;
+    padding-left: 6.5rem;
+}
+
+.home-subtitle {
+  font-size: var(--fs-subtitle);
+}
+
+.header-container, .header-reservation {
+  background-color: rgb(73, 94, 87);
+}
+
+.restaurant-image {
+    border-radius: 16px;
+    position: relative;
+    top: 3.5rem;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.home-title,
+.about-title,
+.reservation-title {
+  font-size: var(--fs-title);
+  font-family: var(--ff-secondary);
+  font-weight: var(--fw-medium-500);
+  color: var(--clr-text-title);
+  letter-spacing: 0.7px;
+}
+
+h2.home-subtitle, .about-subtitle {
+  font-size: var(--fs-subtitle);
+  margin-top: -1.7rem;
+  margin-bottom: 1.5rem;
+}
+
+.home-text, .about-description, .reservation-text {
+  font-size: var(--fs-body);
+  color: var(--clr-text-secondary);
+  font-weight: var(--fw-normal-400);
+  letter-spacing: .5px;
+  line-height: 1.5rem;
+}
+
+.reserve-btn {
+  margin-top: 1rem;
+  background-color: var(--clr-bg-button);
+  color: var(--clr-text-primary);
+  font-size: 1rem;
+  font-weight: var(--fw-bold-700);
+  padding: 0.5rem 1.2rem;
+  border-radius: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.reserve-btn:hover, .online-menu-btn:hover
+ {
+  background-color: hsl(49, 100%, 58%);
+}
+
+/* Specials styling*/
+.specials-title {
+  font-size: 2.5rem;
+  font-family: var(--ff-secondary);
+  font-weight: var(--fw-medium-500);
+}
+
+.specials-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: min(95%, 55rem);
+  margin: 0 auto;
+  gap: 2rem;
+}
+
+.specials-section {
+  margin: 8rem 0;
+}
+
+.spacials-item-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: var(--ff-secondary);
+  font-weight: var(--fw-medium-500);
+  font-size: 1.5rem;
+}
+
+.specials-text {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.specials-item-price {
+  color: rgb(238, 153, 114);
+  font-family: var(--ff-primary);
+  font-size: 1rem;
+}
+
+.specials-description {
+  color: var(--clr-text-card);
+  font-size: 1rem;
+  margin: .5rem 0;
+}
+
+ .specials-header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+
+.online-menu-btn {
+  padding: 1rem 2rem;
+  border-radius: 16px;
+  font-size: 1rem;
+  font-weight: var(--fw-bold-700);
+  background-color: var(--clr-bg-button);
+  border: none;
+  cursor: pointer;
+}
+
+.specials-imgs {
+  width: 100%;
+  border-radius: 16px 16px 0 0;
+  object-fit: cover;
+  aspect-ratio: 5 / 3;
+}
+
+.specials-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--clr-bg-card);
+  border-radius: 16px;
+}
+
+.specials-order {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: auto; /* Pushes this element to the bottom of the card */
+}
+
+/* Testimonials styling*/
+.testimonials-section{
+  background-color: var(--clr-background);
+  margin-bottom: 2rem;
+  padding: 4rem 0;
+}
+
+.testimonials-title {
+  color: var(--clr-text-title);
+  font-family: var(--ff-secondary);
+  font-weight: var(--fw-medium-500);
+  font-size: 3rem;
+  letter-spacing: 0.1rem;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: min(95%, 80rem);
+  max-width: 100%;
+  margin: 0 auto;
+  gap: 2rem;
+}
+
+.testimonials-item {
+  background-color: var(--clr-bg-card);
+  padding: 2rem;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.stars-rating {
+  width: 100%;
+  max-width: 70%;
+  aspect-ratio: 6 / 1;
+  object-fit: cover;
+}
+
+.testimonial-review {
+  color: var(--clr-text-card);
+  margin: 1rem 0;
+  margin-left: .5rem;
+}
+
+.testimonial-author {
+  margin-left: .5rem;
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+}
+
+/*About styling*/
+.about-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5rem;
+  width: min(95%, 55rem);
+  max-width: 55rem;
+  margin: 0 auto;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+
+.about-image {
+  height: 20rem;
+  border-radius: 16px;
+  position: relative;
+  top: 3.5rem;
+}
+
+.about-image-a {
+  top: 8rem;
+  left: 8rem;
+  z-index: 2;
+}
+
+.about-image-b {
+  top: -5rem;
+}
+
+.about-description {
+  color: var(--clr-text-primary);
+}
+
+/* Using media queries for responsivness */
+@media screen and (max-width: 58em) {
+
+/* Styles for header responsiveness*/
+h2.home-subtitle, .about-subtitle {
+  font-size: var(--fs-subtitle);
+  margin-top: -1rem;
+  margin-bottom: 1.5rem;
+}
+
+.home-title, .about-title {
+  font-size: 2.5rem;
+}
+
+.home-text, .about-description {
+  font-size: 1rem;
+}
+
+.reserve-btn {
+  margin-top: 1rem;
+  padding: .5rem 1.2rem;
+}
+
+.restaurant-image {
+  top: 1rem;
+}
+
+/* Styles for testimonials responsiveness*/
+.stars-rating {
+  max-width: 90%;
+}
+
+/* Styles for about responsivness */
+.about-section {
+  gap: 0;
+  grid-template-columns: 1fr;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-image {
+  margin-top: -3.5rem;
+}
+}
+
+@media screen and (max-width: 47em) {
+
+/* Styles for header responsiveness*/
+.header-main {
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  padding-left: 0;
+  margin-bottom: 2rem;
+}
+
+.header-container {
+  padding-bottom: .2rem;
+}
+
+h2.home-subtitle {
+  margin-top: -0.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.home-text {
+  margin-bottom: .5rem;
+}
+
+.reserve-btn {
+  padding: 0.5rem 0.8rem;
+}
+
+.restaurant-image {
+  top: 1rem;
+  left: 2.5rem;
+}
+
+/*Specials responsiveness styles*/
+.specials-grid {
+  grid-template-columns: auto;
+  width: min(48%, 40rem);
+}
+
+/*Styles for testimonials responsiveness*/
+.testimonials-grid {
+  grid-template-columns: auto;
+  width: min(70%, 40rem);
+}
+
+.testimonials-title {
+  font-size: 2.5rem;
+}
+
+.stars-rating {
+  max-width: 60%;
+}
+
+/* about styling*/
+.about-image {
+  width: 40%;
+}
+
+
+}
+
+@media screen and (max-width: 29em) { /* 29em = 470px*/
+/*Specials responsiveness styles*/
+.specials-grid {
+  width: min(15rem);
+}
+.specials-title {
+  font-size: 2rem;
+}
+.specials-header {
+  flex-direction: column;
+  gap: 2rem;
+}
+.online-menu-btn {
+  padding: .5rem 1.5rem;
+  border-radius: 16px;
+  font-size: .8rem;
+  font-weight: var(--fw-bold-700);
+  background-color: var(--clr-bg-button);
+  border: none;
+  cursor: pointer;
+}
+.specials-section {
+  margin-top: 4rem;
+}
+
+/*Styles for testimonials responsiveness*/
+.testimonials-grid {
+  grid-template-columns: auto;
+  width: min(70%, 50rem);
+}
+
+.testimonials-title {
+  font-size: 2rem;
+}
+
+.stars-rating {
+  max-width: 70%;
+}
+
+/* about styling*/
+.about-image {
+  width: 55%;
+}
+}
+
+@media screen and (max-width: 20em) { /* 20em = 300px */
+
+/* header styling*/
+.restaurant-image {
+  top: 1rem;
+  left: 0;
+}
+
+/*Styles for testimonials responsiveness*/
+.testimonials-grid {
+  width: 15rem;
+}
+
+/* about styling*/
+.about-image {
+  width: 51%;
+}
+}
+
+
+

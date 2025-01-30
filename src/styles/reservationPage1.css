@@ -1,0 +1,21 @@
+.header-reservation {
+    margin-bottom: 8rem;
+}
+
+.reservation-image {
+    border-radius: 16px;
+    position: relative;
+    height: 20rem;
+    top: 3.5rem;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.reservation-title {
+    font-size: 3rem;
+    line-height: 1;
+    margin: 2rem 0;
+}
+
+.reservation-text {
+    line-height: 1.8rem;
+}
