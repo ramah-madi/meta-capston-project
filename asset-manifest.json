@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/meta-capston-project/static/css/main.f073ba3d.css",
+    "main.js": "/meta-capston-project/static/js/main.cb7c2173.js",
+    "static/media/bruchetta.svg": "/meta-capston-project/static/media/bruchetta.29ea078fea3d3120ed22402e901b5bbc.svg",
+    "static/media/greek-salad.jpg": "/meta-capston-project/static/media/greek-salad.bed423a1fab5b210e347.jpg",
+    "static/media/mario-and-adrian-a.jpg": "/meta-capston-project/static/media/mario-and-adrian-a.3ad6c366fe625638a407.jpg",
+    "static/media/mario-and-adrian-b.jpg": "/meta-capston-project/static/media/mario-and-adrian-b.98b6231006e15f475e08.jpg",
+    "static/media/restaurantChefB.jpg": "/meta-capston-project/static/media/restaurantChefB.0362397d8a89dd92953e.jpg",
+    "static/media/restauranfood.jpg": "/meta-capston-project/static/media/restauranfood.0289a5182dfad58a4a93.jpg",
+    "static/media/restaurant1.jpg": "/meta-capston-project/static/media/restaurant1.90ef77c6c577aa5f5fc9.jpg",
+    "static/media/Logo.svg": "/meta-capston-project/static/media/Logo.6c132dfefa69396bba43f72aa595e62f.svg",
+    "index.html": "/meta-capston-project/index.html",
+    "static/media/icon-hamburger-menu.svg": "/meta-capston-project/static/media/icon-hamburger-menu.0da6f67ced800ab909f63d5144de37ee.svg",
+    "static/media/delivery-icon.svg": "/meta-capston-project/static/media/delivery-icon.d81ad1752a5772c34dc7ce6bf34520c1.svg",
+    "static/media/close-icon.svg": "/meta-capston-project/static/media/close-icon.3866e265ddf13a4027b32755f4b8afe9.svg",
+    "static/media/success-filled.svg": "/meta-capston-project/static/media/success-filled.55bd0d3003c96b672685a4eb84fcffa4.svg",
+    "main.f073ba3d.css.map": "/meta-capston-project/static/css/main.f073ba3d.css.map",
+    "main.cb7c2173.js.map": "/meta-capston-project/static/js/main.cb7c2173.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f073ba3d.css",
+    "static/js/main.cb7c2173.js"
+  ]
+}
