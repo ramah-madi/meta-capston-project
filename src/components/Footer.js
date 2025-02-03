@@ -9,7 +9,7 @@ export default function Footer() {
         <img className='footer-image' src={chefB} alt='A chef making food in the kitchen'/>
         <ul className='doormat-navigation footer-list' role='navigation'>
           <li><h2 className='footer-title'>Doormat Navigation</h2></li>
-          <li><Link to='/meta-capston-project' className='home'>Home</Link></li>
+          <li><Link to='/meta-capston-project/' className='home'>Home</Link></li>
           <li><Link to='#' className='about'>About</Link></li>
           <li><Link to='#' className='menu'>Menu</Link></li>
           <li><Link to='/reservations' className='reservations'>Reservations</Link></li>

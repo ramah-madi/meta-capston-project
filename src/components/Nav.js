@@ -31,7 +31,7 @@ export default function Nav() {
             <img className="close-icon" src={closeIcon} alt="Close menu icon" />
           </button>
         </li>
-        <li><Link to='/meta-capston-project' className='homepage'>Home</Link></li>
+        <li><Link to='/meta-capston-project/' className='homepage'>Home</Link></li>
         <li><Link to='#' className='about'>About</Link></li>
         <li><Link to='#' className='menu'>Menu</Link></li>
         <li><Link to='/reservations' className='reservations'>Reservations</Link></li>
