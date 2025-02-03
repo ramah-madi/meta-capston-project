@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/meta-capston-project/static/css/main.f073ba3d.css",
-    "main.js": "/meta-capston-project/static/js/main.cb7c2173.js",
+    "main.js": "/meta-capston-project/static/js/main.2e3a188e.js",
     "static/media/bruchetta.svg": "/meta-capston-project/static/media/bruchetta.29ea078fea3d3120ed22402e901b5bbc.svg",
     "static/media/greek-salad.jpg": "/meta-capston-project/static/media/greek-salad.bed423a1fab5b210e347.jpg",
     "static/media/mario-and-adrian-a.jpg": "/meta-capston-project/static/media/mario-and-adrian-a.3ad6c366fe625638a407.jpg",
@@ -16,10 +16,10 @@
     "static/media/close-icon.svg": "/meta-capston-project/static/media/close-icon.3866e265ddf13a4027b32755f4b8afe9.svg",
     "static/media/success-filled.svg": "/meta-capston-project/static/media/success-filled.55bd0d3003c96b672685a4eb84fcffa4.svg",
     "main.f073ba3d.css.map": "/meta-capston-project/static/css/main.f073ba3d.css.map",
-    "main.cb7c2173.js.map": "/meta-capston-project/static/js/main.cb7c2173.js.map"
+    "main.2e3a188e.js.map": "/meta-capston-project/static/js/main.2e3a188e.js.map"
   },
   "entrypoints": [
     "static/css/main.f073ba3d.css",
-    "static/js/main.cb7c2173.js"
+    "static/js/main.2e3a188e.js"
   ]
 }
