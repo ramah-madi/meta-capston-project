@@ -33,8 +33,6 @@ export default function Step2({ data, setData }) {
     setData((prev) => ({ ...prev, dateTime: newValue.toISOString() })); // Save as ISO string
   };
 
-  console.log(data.dateTime)
-
   // Disable past dates
   const disableOldDates = (date) => {
     return date.isBefore(dayjs(), 'day');

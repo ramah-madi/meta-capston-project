@@ -37,53 +37,52 @@ export default function Step4({ data, termsAccepted, setTermsAccepted }) {
           padding: 3,
           borderRadius: 2,
           marginBottom: 3,
-          backgroundColor: '',
+          backgroundColor: '#495e57',
         }}
       >
         <Typography variant="h6" sx={{ mb: 2, fontWeight: 'bold', textAlign: 'center', fontFamily: 'Markazi Text, serif', fontSize
-        : '1.8rem'
+        : '2rem', color: '#c3a510'
          }}>
           Review Your Information
         </Typography>
-        <Box sx={{ display: 'flex', justifyContent: 'space-between', mb: 5, mt: 5}}>
-          <Box sx={{ fontSize: '2rem'}}>
-            <Typography variant="body2" sx={{mb: 2}}><strong className=''>Name:</strong> {data.firstName} {data.lastName}</Typography>
-            <Typography variant="body2" sx={{mb: 2}}><strong>Phone:</strong> {data.phone}</Typography>
-            <Typography variant="body2" sx={{mb: 2}}><strong>Email:</strong> {data.email || 'N/A'}</Typography>
-            <Typography variant="body2" sx={{mb: 2}}><strong>Special Requests:</strong> {data.specialRequirements || 'N/A'}</Typography>
+        <Box sx={{ display: 'flex', justifyContent: 'space-between', backgroundColor: '#edefee', p: 5, mb: 5, mt: 5, borderRadius: 2, border: 'none' }}>
+          <Box>
+            <Typography variant="body2" sx={{mb: 2, color: '#495E57'}}><strong className='review-str'>Name:</strong> {data.firstName} {data.lastName}</Typography>
+            <Typography variant="body2" sx={{mb: 2, color: '#495E57'}}><strong className='review-str'>Phone:</strong> {data.phone}</Typography>
+            <Typography variant="body2" sx={{mb: 2, color: '#495E57'}}><strong className='review-str'>Email:</strong> {data.email || 'N/A'}</Typography>
+            <Typography variant="body2" sx={{mb: 2, color: '#495E57'}}><strong className='review-str'>Special Requests:</strong> {data.specialRequirements || 'N/A'}</Typography>
           </Box>
           <Box>
-            <Typography variant="body2" sx={{mb: 2}}><strong>Table Location:</strong> {data.tableLocation}</Typography>
-            <Typography variant="body2" sx={{mb: 2}}><strong>Occasion:</strong> {data.occasion}</Typography>
-            <Typography variant="body2" sx={{mb: 2}}><strong>Guests:</strong> {data.guests}</Typography>
-            <Typography variant="body2" sx={{mb: 2}}><strong>Date & Time:</strong> {dayjs(data.dateTime).format('MMMM D, YYYY h:mm A')}</Typography>
+            <Typography variant="body2" sx={{mb: 2, color: '#495E57'}}><strong className='review-str'>Table Location:</strong> {data.tableLocation}</Typography>
+            <Typography variant="body2" sx={{mb: 2, color: '#495E57'}}><strong className='review-str'>Occasion:</strong> {data.occasion}</Typography>
+            <Typography variant="body2" sx={{mb: 2, color: '#495E57'}}><strong className='review-str'>Guests:</strong> {data.guests}</Typography>
+            <Typography variant="body2" sx={{mb: 2, color: '#495E57'}}><strong className='review-str'>Date & Time:</strong> {dayjs(data.dateTime).format('MMMM D, YYYY h:mm A')}</Typography>
           </Box>
         </Box>
-        <Typography variant="h6" sx={{ mt: 2, fontWeight: 'bold', textAlign: 'right' }}>
+        <Typography variant="h6" sx={{ mt: 2, fontWeight: 'bold', textAlign: 'right', color: '#edefee', fontSize: '1.5rem' }}>
           Total: {`${totalAmount} TRY`}
         </Typography>
       </Paper>
 
       {/* Payment method selection */}
-      <FormControl component="fieldset" sx={{ mb: 5, mt: 5 }}>
+      <FormControl component="fieldset" sx={{ mb: 6, mt: 5 }}>
         <FormLabel component="legend" sx={{ fontWeight: 'bold' }}>
           Payment Method <span style={{ color: 'red' }}>*</span>
         </FormLabel>
         <RadioGroup
           aria-label="payment-method"
           name="payment-method"
-          value={paymentMethod}
+          value={paymentMethod || 'cash'}
           onChange={handlePaymentMethodChange}
           row
-          sx={{display: 'flex', justifyContent: 'space-between' }}
         >
-          <FormControlLabel value="cash" control={<Radio />} label="Cash" />
+          <FormControlLabel value="cash" sx={{mr: 22}} control={<Radio />} label="Cash" />
           <FormControlLabel value="credit-card" control={<Radio />} label="Credit Card" />
         </RadioGroup>
       </FormControl>
 
       {/* Terms and Privacy Policy checkbox */}
-      <Box sx={{ mb: 3 }}>
+      <Box sx={{ mb: 2 }}>
         <FormControlLabel
           control={<Checkbox checked={termsAccepted} onChange={handleTermsChange} />}
           label="By checking this box you’re agreeing to our terms and privacy policy *"

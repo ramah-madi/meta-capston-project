@@ -4,12 +4,12 @@ import Stepper from '@mui/material/Stepper';
 import Step from '@mui/material/Step';
 import StepLabel from '@mui/material/StepLabel';
 import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
 import dayjs from 'dayjs';
 import Step1 from './StepOne';
 import Step2 from './StepTwo';
 import Step3 from './StepThree';
 import Step4 from './StepFour';
+import ReservationSuccess from './ReservationSuccess';
 
 // Step labels
 const steps = [
@@ -36,8 +36,8 @@ export default function ReservationForm() {
   const step3FormikRef = useRef(null); // Formik ref for validation in Step 3
 
   const handleNext = async () => {
-    // Validate Step 3 before proceeding
     if (activeStep === 2) {
+      await step3FormikRef.current.validateForm(); // Trigger validation
 
       if (Object.keys(step3FormikRef.current.errors).length > 0) {
         step3FormikRef.current.setTouched({
@@ -56,42 +56,27 @@ export default function ReservationForm() {
     setActiveStep((prevStep) => prevStep - 1);
   };
 
-  const handleReset = () => {
-    setActiveStep(0);
-    setData({
-      tableLocation: 'Indoor',
-      occasion: 'Casual',
-      guests: '1 to 4',
-      dateTime: '',
-      contactInfo: '',
-      paymentMethod: '',
-    });
-    setTermsAccepted(false);
-  };
-
   const CurrentStepComponent = stepComponents[activeStep];
 
   return (
     <Box sx={{ width: '100%', maxWidth: 900, margin: 'auto' }}>
       {/* Stepper Navigation */}
-      <Stepper activeStep={activeStep} sx={{ pb: 5 }}>
-        {steps.map((label) => (
-          <Step key={label}>
-            <StepLabel>{label}</StepLabel>
-          </Step>
-        ))}
-      </Stepper>
+      {activeStep < steps.length && (
+        <Stepper activeStep={activeStep} sx={{ pb: 5,
+         
+        }}>
+          {steps.map((label) => (
+            <Step key={label}>
+              <StepLabel>{label}</StepLabel>
+            </Step>
+          ))}
+        </Stepper>
+      )}
 
       {/* Step Content */}
       {activeStep === steps.length ? (
         <React.Fragment>
-          <Typography sx={{ mt: 2, mb: 1 }}>
-            All steps completed - here is your data:
-          </Typography>
-          <pre>{JSON.stringify(data, null, 2)}</pre>
-          <Box sx={{ display: 'flex', flexDirection: 'row', pt: 2 }}>
-            <Button onClick={handleReset}>Reset</Button>
-          </Box>
+          <ReservationSuccess />
         </React.Fragment>
       ) : (
         <React.Fragment>
@@ -114,6 +99,7 @@ export default function ReservationForm() {
             <Button
               onClick={handleNext}
               disabled={activeStep === steps.length - 1 && !termsAccepted}
+              sx={{ color: '#495E57', backgroundColor: '#edefee' }}
             >
               {activeStep === steps.length - 1 ? 'Submit' : 'Next'}
             </Button>

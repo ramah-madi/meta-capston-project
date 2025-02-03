@@ -17,9 +17,9 @@ const validationSchema = Yup.object({
 export default function StepThree({ data, setData, formikRef }) {
   const formik = useFormik({
     initialValues: {
-      firstName: data.firstName,
-      lastName: data.lastName,
-      phone: data.phone,
+      firstName: data.firstName || '',
+      lastName: data.lastName || '',
+      phone: data.phone || '',
       email: data.email || '',
       specialRequirements: data.specialRequirements || '',
     },

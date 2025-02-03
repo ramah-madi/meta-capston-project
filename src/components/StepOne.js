@@ -20,8 +20,7 @@ export default function StepOne({ data, setData }) {
   const handleGuestsChange = (event) => {
     setData((prev) => ({ ...prev, guests: event.target.value }));
   };
-  
-console.log(data)
+
   return (
     <Box>
 
