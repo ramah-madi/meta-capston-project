@@ -19,3 +19,65 @@
 .reservation-text {
     line-height: 1.8rem;
 }
+
+/* Success Styling*/
+
+.success-icon {
+    width: 2rem;
+}
+
+.success-background {
+    background-color: #d9e5df;
+    padding: 1rem;
+    border-radius: 50%;
+    width: fit-content;
+}
+
+.success-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.success-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.note-content {
+    margin: 2rem 0;
+    font-weight: var(--fw-medium-500);
+    font-size: 1.1rem;
+    width: 40%;
+}
+
+.resend-button {
+    margin-bottom: 8rem;
+    margin-top: 2rem;
+    padding: .5rem 2rem;
+    border-radius: 16px;
+    font-weight: var(--fw-medium-500);
+    background-color: var(--clr-bg-button);
+    cursor: pointer;
+}
+
+.resend-button:hover {
+    background-color: hsl(49, 100%, 58%);
+    ;
+}
+
+.reservation-h1 {
+    color: #474747;
+}
+
+strong.review-str {
+    font-size: 1.3rem;
+    font-family: var(--ff-secondary);
+    margin-right: .5rem;
+    color: rgb(0, 0, 0);
+}
