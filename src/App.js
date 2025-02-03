@@ -10,7 +10,7 @@ function App() {
     <>
       <Nav />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/meta-capston-project" element={<Home />} />
         <Route path="/reservations" element={<ReservationMain />} />
       </Routes>
       <Footer />
